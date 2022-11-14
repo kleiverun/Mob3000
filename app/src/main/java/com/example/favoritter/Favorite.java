@@ -21,7 +21,7 @@ public class Favorite extends AppCompatActivity {
 
         lv_favoriteList = findViewById(R.id.lv_allFavorites);
         dbHelper = new DataBaseHelper(Favorite.this);
-
+        System.out.println("wdadw");
         //dbHelper.getId() This returns the ids of all favorites
         Toast.makeText(this, "Click a favorite to delete it! \uD83D\uDE00 ", Toast.LENGTH_LONG).show();
         showFavoritesOnListView(dbHelper);
