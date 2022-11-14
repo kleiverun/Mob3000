@@ -19,9 +19,8 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_FOOD_ID ="FOOD_ID";
     FavoriteModel favoriteModel;
 
-    //Constructor, overides the variables inside constructor, except context.
+    //Constructor, overrides the variables inside constructor, except context.
     public DataBaseHelper(@Nullable Context context) {super(context, "favorite.db", null, 1);}
-
 
     @Override
     public void onCreate(SQLiteDatabase db) {
