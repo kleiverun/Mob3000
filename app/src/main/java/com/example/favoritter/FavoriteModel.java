@@ -3,47 +3,30 @@ package com.example.favoritter;
 import androidx.annotation.NonNull;
 
 public class FavoriteModel {
-    private int userID,favoriteID;
+    private int foodID;
     private String favoriteName;
 
 
 
-    public FavoriteModel(int userID, int favoriteID, String favoriteName) {
-        this.userID = userID;
-        this.favoriteID = favoriteID;
+    public FavoriteModel(int foodID, String favoriteName) {
+        this.foodID = foodID;
         this.favoriteName = favoriteName;
     }
 
     @NonNull
     @Override
     public String toString() {
-        return "FavoriteModel{" +
-                "userID=" + userID +
-                ", favoriteID=" + favoriteID +
-                ", favoriteName='" + favoriteName + '\'' +
-                '}';
+        return favoriteName ;
     }
-
-    public int getUserID() {
-        return userID;
+    public int getFoodID() {
+        return foodID;
     }
-
-    public void setUserID(int userID) {
-        this.userID = userID;
+    public void setFoodID(int foodID) {
+        this.foodID = foodID;
     }
-
-    public int getFavoriteID() {
-        return favoriteID;
-    }
-
-    public void setFavoriteID(int favoriteID) {
-        this.favoriteID = favoriteID;
-    }
-
     public String getFavoriteName() {
         return favoriteName;
     }
-
     public void setFavoriteName(String favoriteName) {
         this.favoriteName = favoriteName;
     }
