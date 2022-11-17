@@ -27,7 +27,5 @@ public class FavoriteModel {
     public String getFavoriteName() {
         return favoriteName;
     }
-    public void setFavoriteName(String favoriteName) {
-        this.favoriteName = favoriteName;
-    }
+    public void setFavoriteName(String favoriteName) {  this.favoriteName = favoriteName;  }
 }

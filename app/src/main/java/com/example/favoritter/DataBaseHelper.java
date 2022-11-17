@@ -85,7 +85,6 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public boolean deleteOne(FavoriteModel favoriteModel){
         SQLiteDatabase db = getWritableDatabase();
         String queryString = "DELETE FROM " + FAVORITE_TABLE + " WHERE " + COLUMN_FOOD_ID + " = " + favoriteModel.getFoodID();
-
         Cursor cursor = db.rawQuery(queryString, null);
         return cursor.moveToFirst();
     }
